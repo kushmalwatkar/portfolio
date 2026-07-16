@@ -26,8 +26,13 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "django-insecure-change-me-in-p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True #os.environ.get("DJANGO_DEBUG") == "1"
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", ".vercel.app", "www.kushmalwatkar.com", "kushmalwatkar.com"]
-
+ALLOWED_HOSTS = [
+    'kushmalwatkar.com',
+    'www.kushmalwatkar.com',
+    '.vercel.app',
+    'localhost',
+    '127.0.0.1',
+]
 
 # Application definition
 
