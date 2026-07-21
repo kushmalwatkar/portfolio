@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "example",
+    "portfolio",
 ]
 
 MIDDLEWARE = [
@@ -58,10 +58,39 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "config.urls"
 
+PORTFOLIO_PROJECTS = [
+    {
+        "name": "US Weather Map",
+        "web-name": "us-weather-map",
+        "tag": "embedded / hardware",
+        "description": "100 RGB LEDs displaying live weather conditions, temperature, precipitation, air quality, and wind speed using an API.",
+        "images": [
+            {"url": "Portfolio/images/UWM/UWM5.jpeg", "caption": "Hurricane Ida (2021)"},
+            {"url": "Portfolio/images/UWM/UWM1.JPG", "caption": "Installing LEDs"},
+            {"url": "Portfolio/images/UWM/UWM2.JPG", "caption": "Box construction with LED's numbers"},
+            {"url": "Portfolio/images/UWM/UWM3.JPG", "caption": "Cloud cover testing"},
+        ],
+        "show_skills": ["ESP32", "C++", "API Integration"],
+        "skills": ["ESP32", "C++", "API Integration", "Wiring", "LED Control"],
+        "learn_more": "/project/us-weather-map/",
+        "links": [
+            {
+                "name": "YouTube",
+                "url": "#"
+            },
+            {
+                "name": "GitHub",
+                "url": "#"
+            }
+        ]
+    },
+]
+
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'portfolio/templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -121,5 +150,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/stable/howto/static-files/
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = "/static/"
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'Portfolio/static')]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

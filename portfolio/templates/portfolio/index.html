@@ -1,0 +1,130 @@
+{% extends "portfolio/layout.html" %}
+{% load static %}
+
+{% block title %}Kush Malwatkar{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'Portfolio/css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="index-full">
+        <div class="header">
+            <br>
+            <span>Hello, I'm</span>
+            <h1 class="name titles">Kush Malwatkar<span class="accent">,</span></h1>
+            <span class="bio">a <a class="accent" href="https://www.wpi.edu/">WPI</a> student obsessed with building things that move, think, and respond to the world. I live at the intersection of <span class="accent">hardware</span> and <span class="accent">software</span>, designing <span class="accent">embedded systems</span>, writing real-time control code, and bringing concepts from idea to working prototype.</span>
+            <div class="actions">
+                <button class="action action-main">See what I've built</button>
+                <button class="action">Download resume</button>
+                <button class="action">Get in touch</button>
+                <br>
+                <br>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div class="pfp-cont">
+            <img src="{% static 'Portfolio/images/kush.jpg' %}" alt="" class="pfp">
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-header">Featured Projects</h2>
+        <div id="projects">
+            <div class="project"> <!--UWM-->
+                    <div class="p-img-cont">
+                        <div class="p-img" style="background-image: url(assets/images/UWM/UWM5.jpeg);">Hurricane Ida (2021) | Scroll →</div>
+                        <div class="p-img" style="background-image: url(assets/images/UWM/UWM3.JPG);">Cloud cover testing</div>
+                        <div class="p-img" style="background-image: url(assets/images/UWM/UWM2.JPG);">Box construction with LED's numbers</div>
+                        <div class="p-img" style="background-image: url(assets/images/UWM/UWM1.JPG);">Installing LEDs</div>
+                    </div>
+                    <div class="p-main">    
+                        <div class="p-head">US Weather Map</div>
+                        <div class="p-type">embedded / hardware</div>
+                        <div class="p-body">100 RGB LEDs displaying live weather conditions, temperature, precipitation, air quality, and wind speed using an API.</div>
+                    </div>
+                    <div class="p-skills">
+                        <div class="p-skill">ESP-8266</div>
+                        <div class="p-skill">C++</div>
+                        <div class="p-skill">API Integration</div>
+                    </div>
+            </div>
+            <div class="project"> <!--ACB-->
+                    <div class="p-img-cont">
+                        <div class="p-img" style="background-image: url(assets/images/ACB/ACB11.jpeg);">Scroll →</div>
+                        <div class="p-img" style="background-image: url(assets/images/ACB/ACB7.jpeg);">Custom wiring</div>
+                        <div class="p-img" style="background-image: url(assets/images/ACB/ACB2.jpeg);">Soldering circuit board</div>
+                        <div class="p-img" style="background-image: url(assets/images/ACB/ACB12.jpeg);">Final product</div>
+                    </div>
+                    <div class="p-main">
+                        <div class="p-head">Automated Blinds</div>
+                        <div class="p-type">embedded / hardware</div>
+                        <div class="p-body">6 blinds using DC motors and HC-SR04 ultrasonic sensors operated by an infrared remote, uses custom soldered board.</div>
+                    </div>
+                    <div class="p-skills">
+                        <div class="p-skill">Arduino</div>
+                        <div class="p-skill">Soldering</div>
+                        <div class="p-skill">Sensors</div>
+                    </div>
+            </div>
+            <div class="project"> <!--WW-->
+                    <div class="p-img-cont">
+                        <div class="p-img" style="background-image: url(assets/images/WW/WW4.jpeg);">Scroll →</div>
+                        <div class="p-img" style="background-image: url(assets/images/WW/WW2.jpeg);">Loadcell - LED complex</div>
+                        <div class="p-img" style="background-image: url(assets/images/WW/WW3.jpeg);">Wired Arduino Nano</div>
+                        <div class="p-img" style="background-image: url(assets/images/WW/WW1.jpeg);">Opened case</div>
+                    </div>
+                    <div class="p-main">
+                        <div class="p-head">Water Tracker</div>
+                        <div class="p-type">embedded / hardware</div>
+                        <div class="p-body">Water consumption tracker using 4 load-cells and status LED's to indicate adequate water intake as per CDC guidelines.</div>
+                    </div>
+                    <div class="p-skills">
+                        <div class="p-skill">Arduino</div>
+                        <div class="p-skill">Sensors</div>
+                        <div class="p-skill">LED Strip</div>
+                    </div>
+            </div>
+        </div>
+        <div class="see-more"><a href="#">See all projects</a></div>
+    </div>
+    <div class="section">
+        <h2 class="section-header">Skills</h2>
+        <div id="skills">
+            <div class="skills">
+                <h3 class="skills-header">Web Development</h3>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">API Integration</div>
+                <div class="skill">Python</div>
+                <div class="skill">Java</div>
+                <div class="skill">Django</div>
+                <div class="skill">Flask</div>
+            </div>
+            <div class="skills">
+                <h3 class="skills-header">Embedded Systems & Microcontrollers</h3>
+                <div class="skill">Arduino</div>
+                <div class="skill">ESP-32</div>
+                <div class="skill">Raspberry Pi</div>
+                <div class="skill">Microcontroller Programming</div>
+                <div class="skill">Sensor Integration</div>
+                <div class="skill">Multimeter Usage</div>
+            </div>
+            <div class="skills">
+                <h3 class="skills-header">Electronics & Hardware</h3>
+                <div class="skill">Circuit Prototyping</div>
+                <div class="skill">Soldering</div>
+                <div class="skill">Wiring</div>
+                <div class="skill">Multimeter Usage</div>
+                <div class="skill">Sensor Integration</div>
+            </div>
+            <div class="skills">
+                <h3 class="skills-header">Robotics & Control</h3>
+                <div class="skill">Vex V5 Robotics</div>
+                <div class="skill">PID Control</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
