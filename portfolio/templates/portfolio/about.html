@@ -1,0 +1,32 @@
+{% extends "portfolio/layout.html" %}
+{% load static %}
+
+{% block title %}About — Kush Malwatkar{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'Portfolio/css/about.css' %}">
+{% endblock %}
+
+{% block content %} 
+    <div class="space"></div>
+    <h1>About me</h1>
+    <div class="main">
+        <div class="left">
+            <img class="profile-img" src="{% static 'Portfolio/images/kush.jpg' %}" alt="Kush Malwatkar">
+            <figcaption>Congressional App Challenge 2023, Washington DC</figcaption>
+        </div>
+        <div class="right">
+            <h1 class="sans">Hi, I'm Kush Malwatkar</h1>
+            <p class="accent">Engineer — Builder — Relentless tinkerer</p>
+            <p>I'm Kush Malwatkar, a Robotics Engineering student at Worcester Polytechnic Institute driven by the most interesting problems that live at the intersection of hardware and software.</p>
+
+            <p>That obsession started early. At 14 I completed Harvard's CS50X, then taught myself web development through CS50W — not because I had to, but because I wanted to understand how things worked. By high school I was leading a 100+ person FIRST Robotics Competition team as Programming Lead, writing control systems under competition pressure and learning what it actually means to ship something that has to work. I also founded my school's Mechatronics Club from scratch, grew it to 30+ members, and introduced students to circuits, sensors, and embedded systems for the first time.</p>
+
+            <p>At WPI, I've doubled down on that foundation. Project-based curriculum pushes me beyond textbook problems and build devices that interact with the world, it's environment and fail in interesting ways. My work spans from low-level firmware on microcontrollers to high-level autonomy and API-driven systems — I'm comfortable at every layer of the stack and genuinely curious about all of them.</p>
+
+            <p>Outside the lab I've done research connected to RPI's Koratkar lab, competed in science and engineering fairs, and spent more hours than I'd like to admit soldering, debugging, and starting over. That's the part nobody puts on a resume but it's where most of the real learning happens.</p>
+
+            <p>I'm currently looking for opportunities where I can contribute to teams building hardware that matters — robotics, automation, embedded systems, or anything that involves making software interact with the physical world.</p>
+        </div>
+    </div>
+{% endblock %}

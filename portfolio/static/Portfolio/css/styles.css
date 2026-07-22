@@ -45,6 +45,17 @@ body::-webkit-scrollbar-thumb:hover
     transition: 0.3s ease;
     background-color: var(--text);
 }
+
+.mono
+{
+    font-family: "IBM Plex Sans";
+}
+
+.sans
+{
+    font-family: "Satoshi-Regular";
+}
+
 .accent
 {
     color: var(--accent);
