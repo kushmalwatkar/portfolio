@@ -12,21 +12,64 @@
     <h1>About me</h1>
     <div class="main">
         <div class="left">
-            <img class="profile-img" src="{% static 'Portfolio/images/kush.jpg' %}" alt="Kush Malwatkar">
-            <figcaption>Congressional App Challenge 2023, Washington DC</figcaption>
+            <div class="pfp">
+                <img class="profile-img" src="{% static 'Portfolio/images/kush.jpg' %}" alt="Kush Malwatkar">
+                <figcaption>Congressional App Challenge 2023, Washington D.C.</figcaption>
+            </div>
+            <div>
+                <div class="timeline">
+                    <h2 class="sans">Timeline</h2>
+                    <div class="event">
+                        <div class="bullet"></div>
+                        <span class="event-title">2021</span>
+                        
+                        <div>Completed Harvard CS50X; Started Harvard CS50W; Developed a passion for programming and web development.</div>
+                    </div>
+                    <div class="event">
+                        <span class="event-title">2022</span>
+                        <div class="bullet"></div>
+                        
+                        <div>Completed Harvard CS50W; Founded Mechatronics Club; Joined FRC #2791 as a programmer; Completed many personal projects, including US Weather Map, Water Warner, and Automated Blinds.</div>
+                    </div>
+                    <div class="event">
+                        <span class="event-title">2023</span>
+                        <div class="bullet"></div>
+                        
+                        <div>Led Mechatronics Club as President; Contributed to FRC #2791 as a programmer.</div>
+                    </div>
+                    <div class="event">
+                        <span class="event-title">2024</span>
+                        <div class="bullet"></div>
+                           
+                        <div>Won the Congressional App Challenge and became Ambassador; Interned at RPI, researched Al-ion batteries presented at GCRSEF; Rose to Programming Lead on FRC #2791; Mentored 30+ middle school students in CS and Web Development.</div>
+                    </div>
+                    <div class="event">
+                        <span class="event-title">2025</span>
+                        <div class="bullet"></div>
+                        
+                        <div>Graduated from Shaker High School; Enrolled at Worcester Polytechnic Institute; Mentored 30+ middle school students in CS and Mechatronics; Rose to Project Manager on FRC #2791.</div>
+                    </div>
+                    <div class="event">
+                        <span class="event-title">2025-Present</span>
+                        <div class="bullet"></div>
+                        
+                        <div>Building at WPI; Deepening expertise in embedded systems, autonomous robotics; Actively seeking internships in robotics and embedded systems.</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="right">
             <h1 class="sans">Hi, I'm Kush Malwatkar</h1>
             <p class="accent">Engineer — Builder — Relentless tinkerer</p>
             <p>I'm Kush Malwatkar, a Robotics Engineering student at Worcester Polytechnic Institute driven by the most interesting problems that live at the intersection of hardware and software.</p>
 
-            <p>That obsession started early. At 14 I completed Harvard's CS50X, then taught myself web development through CS50W — not because I had to, but because I wanted to understand how things worked. By high school I was leading a 100+ person FIRST Robotics Competition team as Programming Lead, writing control systems under competition pressure and learning what it actually means to ship something that has to work. I also founded my school's Mechatronics Club from scratch, grew it to 30+ members, and introduced students to circuits, sensors, and embedded systems for the first time.</p>
+            <p>At 14, I completed Harvard's CS50X, developed a passion for web development, pursued CS50W the next year. In high school, I rose the ranks of my FIRST Robotics Competition team, Shaker Robotics Team #2791  as Programming Lead, then Project Manager. Writing control systems under competition pressure and learning what it actually means lead and manage a large team. I founded my school's Mechatronics Club, grew it to 30+ members, and introduced students to circuits, sensors, and embedded systems for the first time.</p>
 
-            <p>At WPI, I've doubled down on that foundation. Project-based curriculum pushes me beyond textbook problems and build devices that interact with the world, it's environment and fail in interesting ways. My work spans from low-level firmware on microcontrollers to high-level autonomy and API-driven systems — I'm comfortable at every layer of the stack and genuinely curious about all of them.</p>
+            <p>Volunteering at a battery research lab at Rensselaer Polytechnic Institute, I tested novel cathodes for aqueous aluminum-ion batteries. Which I eventually presented at the 2024 Greater Capital Region Science & Engineering Fair. That same year, I won the 2024 Congressional App Challenge for NY District 20 by building a web app to educate users about financial literacy.</p>
 
-            <p>Outside the lab I've done research connected to RPI's Koratkar lab, competed in science and engineering fairs, and spent more hours than I'd like to admit soldering, debugging, and starting over. That's the part nobody puts on a resume but it's where most of the real learning happens.</p>
+            <p>I continued to build projects like a US weather map with 100 individually addressable RGB LEDs driven by an ESP-32 pulling live API data, automated motor-driven blinds connected to my smart home ecosystem, motion-sensored LED systems, and more. I'm comfortable across a wide variety of technology, from C++ on microcontrollers to Python backends and web frontends. My curiosity and passion for learning driving me to never stop exploring.</p>
 
-            <p>I'm currently looking for opportunities where I can contribute to teams building hardware that matters — robotics, automation, embedded systems, or anything that involves making software interact with the physical world.</p>
+            <p>I'm currently looking for opportunities where I can contribute to teams working in robotics, automation, embedded systems, and the like.</p>
         </div>
     </div>
 {% endblock %}
