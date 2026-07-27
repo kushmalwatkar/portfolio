@@ -61,10 +61,16 @@ body::-webkit-scrollbar-thumb:hover
     color: var(--accent);
 }
 
+.gap
+{
+    height: 50px;
+}
+
 .cont
 {
     padding-left: 5%;
     padding-right: 5%;
+    height: 100%;
 }
 
 /* Nav */
@@ -108,6 +114,7 @@ body::-webkit-scrollbar-thumb:hover
     height: 50px;
     height: fit-content;
     color: var(--text);
+    text-decoration: none;
 }
 .nav-btn:hover
 {

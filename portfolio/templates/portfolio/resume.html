@@ -1,0 +1,15 @@
+{% extends "portfolio/layout.html" %}
+{% load static %}
+
+{% block title %}Resume — Kush Malwatkar{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'Portfolio/css/resume.css' %}">
+{% endblock %}
+
+{% block content %} 
+    
+    <h1>Resume</h1>
+    <a class="download" href="{% static 'Portfolio/Kush Malwatkar Resume 2026.pdf' %}" download="Kush_Malwatkar_Resume.pdf">Download</a>
+    <img src="{% static 'Portfolio\resume.png' %}"></img>
+{% endblock %}

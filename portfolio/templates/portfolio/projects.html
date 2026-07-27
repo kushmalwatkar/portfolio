@@ -11,32 +11,6 @@
         <h1>All Projects</h1>
         <p>Click on a project to learn more!</p>
         <div id="projects">
-            <div class="card-deck">
-                {% for project in projects %}
-                    <a href="{{ project.learn_more }}" class="project"> <!--UWM-->
-                        <div class="p-img-cont">
-                            {% for image in project.images %}
-                                <div class="p-img" style="background-image: url('{% static image.url %}');">{{image.caption}}</div>
-                            {% endfor %}
-                        </div>
-                        <div class="p-main">    
-                            <div class="p-head">{{project.name}}</div>
-                            <div class="p-type">{{project.tag}}</div>
-                            <div class="p-body">{{project.description}}</div>
-                        </div>
-                        <div class="p-skills">
-                            {% for skill in project.show_skills %}
-                                <div class="p-skill">{{skill}}</div>
-                            {% endfor %}
-                        </div>
-                        <div class="p-links">
-                            {% for link in project.links %}
-                                <a class="p-link" href="{{link.url}}">{{link.name}}</a>
-                            {% endfor %}
-                        </div>
-                    </a>
-                {% endfor %}
-            </div>
             <hr>
             <div class="card-deck">
                 <div class="project"> <!--UWM-->
@@ -103,6 +77,22 @@
                         <div class="p-link">YouTube</div>
                         <div class="p-link">Learn more</div>
                     </div>
+                </div>            
+                <div class="project"> <!--ibuck-->
+                    <div class="p-img-cont"></div>
+                    <div class="p-main">
+                        <div class="p-head">IBuck</div>
+                        <div class="p-type">javascript / frontend</div>
+                        <div class="p-body">Winning website for the <a href="https://www.congressionalappchallenge.us/">2024 Congressional App Challenge</a>. Financial education website to promote financial literacy.</div>
+                    </div>
+                    <div class="p-skills">
+                            <div class="p-skill">HTML</div>
+                            <div class="p-skill">CSS</div>
+                            <div class="p-skill">JavaScript</div>
+                        </div>
+                    <div class="p-links">
+                        <div class="p-link">Learn more</div>
+                    </div>
                 </div>
                 <div class="project"> <!--MSL-->
                     <div class="p-img-cont">
@@ -124,7 +114,37 @@
                     <div class="p-links">
                         <div class="p-link">Learn more</div>
                     </div>
+                </div>        
+                <div class="project"> <!--atmospheric-->
+                    <div class="p-img-cont"></div>
+                    <div class="p-main">
+                        <div class="p-head">Atmospheric Research</div>
+                        <div class="p-body">Text</div>
+                    </div>
+                    <div class="p-skills">
+                        <div class="p-skill">HTML</div>
+                        <div class="p-skill">CSS</div>
+                        <div class="p-skill">JavaScript</div>
+                    </div>   
+                    <div class="p-links">
+                        <div class="p-link">Learn more</div>
+                    </div>
                 </div>
+                <div class="project"> <!--flight tracker-->
+                    <div class="p-img-cont"></div>
+                    <div class="p-main">
+                        <div class="p-head">Flight Tracker</div>
+                        <div class="p-body">Text</div>
+                    </div>
+                    <div class="p-skills">
+                        <div class="p-skill">HTML</div>
+                        <div class="p-skill">CSS</div>
+                        <div class="p-skill">JavaScript</div>
+                    </div>   
+                    <div class="p-links">
+                        <div class="p-link">Learn more</div>
+                    </div>
+                </div>     
                 <div class="project"> <!--lyrix-->
                     <div class="p-img-cont"></div>
                     <div class="p-main">
@@ -153,22 +173,6 @@
                         <div class="p-skill">Django</div>
                         <div class="p-skill">SQLite 3</div>
                     </div>
-                    <div class="p-links">
-                        <div class="p-link">Learn more</div>
-                    </div>
-                </div>
-                <div class="project"> <!--ibuck-->
-                    <div class="p-img-cont"></div>
-                    <div class="p-main">
-                        <div class="p-head">IBuck</div>
-                        <div class="p-type">javascript / frontend</div>
-                        <div class="p-body">Winning website for the <a href="https://www.congressionalappchallenge.us/">2024 Congressional App Challenge</a>. Financial education website to promote financial literacy.</div>
-                    </div>
-                    <div class="p-skills">
-                            <div class="p-skill">HTML</div>
-                            <div class="p-skill">CSS</div>
-                            <div class="p-skill">JavaScript</div>
-                        </div>
                     <div class="p-links">
                         <div class="p-link">Learn more</div>
                     </div>
@@ -205,10 +209,41 @@
                         <div class="p-link">Learn more</div>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project"> <!--CAC ambassadorcitizenship quiz-->
                     <div class="p-img-cont"></div>
                     <div class="p-main">
                         <div class="p-head">Citizenship Quiz</div>
+                        <div class="p-body">Text</div>
+                    </div>
+                    <div class="p-skills">
+                        <div class="p-skill">HTML</div>
+                        <div class="p-skill">CSS</div>
+                        <div class="p-skill">JavaScript</div>
+                    </div>   
+                    <div class="p-links">
+                        <div class="p-link">Learn more</div>
+                    </div>
+                </div>
+                
+                <div class="project"> <!--atmospheric-->
+                    <div class="p-img-cont"></div>
+                    <div class="p-main">
+                        <div class="p-head">Atmospheric Research</div>
+                        <div class="p-body">Text</div>
+                    </div>
+                    <div class="p-skills">
+                        <div class="p-skill">HTML</div>
+                        <div class="p-skill">CSS</div>
+                        <div class="p-skill">JavaScript</div>
+                    </div>   
+                    <div class="p-links">
+                        <div class="p-link">Learn more</div>
+                    </div>
+                </div>
+                <div class="project"> <!--RPI research-->
+                    <div class="p-img-cont"></div>
+                    <div class="p-main">
+                        <div class="p-head">RPI Research</div>
                         <div class="p-body">Text</div>
                     </div>
                     <div class="p-skills">
