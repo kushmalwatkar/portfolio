@@ -5,12 +5,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Portfolio/css/styles.css' %}">
+    {% block css %}
+    {% endblock %}
 
-    <!-- Title with Fallback -->
-    <title>{% block title %}Kush Malwatkar | Robotics & Embedded Systems{% endblock %}</title>
-
-    <!-- Standard Meta Description for Google Search -->
-    <meta name="description" content="Kush Malwatkar – WPI student specializing in robotics, embedded systems, and automation. Building hardware and software at the intersection of movement and intelligence.">
+    <!-- Standard Title & Description for Google Search -->
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="WPI student passionate about embedded systems, robotics, and automation.">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{% static 'Portfolio/css/styles.css' %}">
@@ -19,39 +20,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Favicons -->
+    <!-- Recommended: Standard favicon.ico file -->
     <link rel="icon" href="{% static 'Portfolio/images/logos/logo2.ico' %}" sizes="any">
+    <!-- PNG Favicon Backup -->
     <link rel="icon" href="{% static 'Portfolio/images/logos/logo 2.png' %}" type="image/png">
+    <!-- Apple Touch Icon (recommended 180x180 PNG) -->
     <link rel="apple-touch-icon" href="{% static 'Portfolio/images/logos/logo 2.png' %}">
 
     <!-- Open Graph for Social Sharing (LinkedIn, iMessage, Discord previews) -->
-    <meta property="og:title" content="Kush Malwatkar | Robotics Engineer & Developer"/>
-    <meta property="og:description" content="WPI Robotics Engineering student specializing in embedded systems, microcontrollers, and hardware-software integration."/>
-    <meta property="og:image" content="{% static 'Portfolio/images/logos/logo 2.png' %}"/>
+    <meta property="og:title" content="Kush Malwatkar"/>
+    <meta property="og:description" content="[FILL IN: Short description for social media previews]"/>
+    <!-- Must be a full absolute URL pointing to a thumbnail image (1200x630px recommended) -->
+    <meta property="og:image" content="https://www.kushmalwatkar.com{% static '[FILL IN: path/to/preview-image.jpg]' %}"/>
     <meta property="og:url" content="https://www.kushmalwatkar.com"/>
     <meta property="og:type" content="website"/>
 
     <!-- Google Verification -->
     <meta name="google-site-verification" content="n9mpGQljeR1kixyHa1UZpUVeg4Swku4uJliueb0GvRQ" />
 
-    <!-- Structured Data (Schema.org) for Search Engines -->
+    <!-- Structured Data (Schema.org) for search engine entity recognition -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Kush Malwatkar",
       "url": "https://www.kushmalwatkar.com",
-      "jobTitle": "Robotics Engineer & Student",
-      "worksFor": {
-        "@type": "CollegeOrUniversity",
-        "name": "Worcester Polytechnic Institute"
-      },
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "Worcester Polytechnic Institute"
-      },
+      "jobTitle": "[FILL IN: e.g., Robotics Engineer / Student]",
+      "alumniOf": "Worcester Polytechnic Institute",
       "sameAs": [
-        "https://github.com/kushmalwatkar",
-        "https://www.linkedin.com/in/kush-malwatkar/"
+        "https://github.com/[FILL IN: your-github-username]",
+        "https://linkedin.com/in/[FILL IN: your-linkedin-username]"
       ]
     }
     </script>
