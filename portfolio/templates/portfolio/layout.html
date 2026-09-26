@@ -5,34 +5,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title with Fallback -->
+    <title>{% block title %}Kush Malwatkar | Robotics & Embedded Systems{% endblock %}</title>
+
+    <!-- Standard Meta Description for Google Search -->
+    <meta name="description" content="Kush Malwatkar – WPI student specializing in robotics, embedded systems, and automation. Building hardware and software at the intersection of movement and intelligence.">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="{% static 'Portfolio/css/styles.css' %}">
-    {% block css %}
-    {% endblock %}
-    <link rel="stylesheet" href="{% static 'fonts\Satoshi_Complete\Fonts\WEB\css\satoshi.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="{% static 'Portfolio/images/logos/K.png' %}" type="image/x-icon">
-    <meta property="og:title" content="Kush Malwatkar — Robotics & Embedded Systems"/>
-    <meta property="og:description" content="WPI student passionate about embedded systems, robotics, and automation projects."/>
-    <meta property="og:image" content="kush.jpg"/>
-    <meta property="og:url" content="https://kushmalwatkar.com"/>
-    <link rel="icon" href="{% static 'Portfolio/images/logos/logo 2.png' %}" sizes="any">
+
+    <!-- Favicons -->
+    <link rel="icon" href="{% static 'Portfolio/images/logos/logo2.ico' %}" sizes="any">
+    <link rel="icon" href="{% static 'Portfolio/images/logos/logo 2.png' %}" type="image/png">
+    <link rel="apple-touch-icon" href="{% static 'Portfolio/images/logos/logo 2.png' %}">
+
+    <!-- Open Graph for Social Sharing (LinkedIn, iMessage, Discord previews) -->
+    <meta property="og:title" content="Kush Malwatkar | Robotics Engineer & Developer"/>
+    <meta property="og:description" content="WPI Robotics Engineering student specializing in embedded systems, microcontrollers, and hardware-software integration."/>
+    <meta property="og:image" content="{% static 'Portfolio/images/logos/logo 2.png' %}"/>
+    <meta property="og:url" content="https://www.kushmalwatkar.com"/>
+    <meta property="og:type" content="website"/>
+
+    <!-- Google Verification -->
     <meta name="google-site-verification" content="n9mpGQljeR1kixyHa1UZpUVeg4Swku4uJliueb0GvRQ" />
-    <title>
-        {% block title %}
-        {% endblock %}
-    </title>
+
+    <!-- Structured Data (Schema.org) for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kush Malwatkar",
+      "url": "https://www.kushmalwatkar.com",
+      "jobTitle": "Robotics Engineer & Student",
+      "worksFor": {
+        "@type": "CollegeOrUniversity",
+        "name": "Worcester Polytechnic Institute"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Worcester Polytechnic Institute"
+      },
+      "sameAs": [
+        "https://github.com/kushmalwatkar",
+        "https://www.linkedin.com/in/kush-malwatkar/"
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="nav">
         <div class="nav-cont">
             <div class="nav-main">
                 <a class="logo" href="/"><img src="{% static 'Portfolio/images/logos/logo4.png' %}" alt=""></a>
-                <a class="nav-btn" href="/">Home</a>                
+                <a class="nav-btn" href="/">Home</a>
                 <a class="nav-btn" href="/about">About</a>
-                <a class="nav-btn" href="/projects">Projects</a>    
-                <a class="nav-btn" href="/resume">Resume</a>    
-                <a class="nav-btn" href="/contact">Contact</a>  
+                <a class="nav-btn" href="/projects">Projects</a>
+                <a class="nav-btn" href="/resume">Resume</a>
+                <a class="nav-btn" href="/contact">Contact</a>
             </div>
         </div>
     </div>
